@@ -6,3 +6,21 @@
 # 1234 5
 # 6 -> 5
 
+import random
+num = int(input('Введите количество элементов: '))
+x = int(input('Введите проверочное число: '))
+list_1 = []
+
+for i in range(num):
+    list_1.append(random.randint(0,20))
+
+print(list_1)
+
+dif = abs(x-list_1[0])
+min = list_1[0]
+
+for i in list_1:
+    dif_2 = abs(x-i)
+    if dif_2 < dif:
+        min = i
+print(min) 
