@@ -21,6 +21,6 @@ min = list_1[0]
 
 for i in list_1:
     dif_2 = abs(x-i)
-    if dif_2 < dif:
+    if dif_2 < dif :
         min = i
 print(min) 
